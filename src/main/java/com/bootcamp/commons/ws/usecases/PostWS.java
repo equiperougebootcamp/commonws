@@ -1,30 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.bootcamp.commons.ws.usecases;
 
-import com.bootcamp.commons.enums.StatutPost;
 import com.bootcamp.commons.enums.TypePost;
 import com.bootcamp.entities.Region;
-import com.bootcamp.entities.User;
 
-import java.util.List;
-
-/**
- *
- * @author leger
- */
 public class PostWS {
     private int id;
-    private TypePost typePost;
-    private StatutPost statutPost;
-    private long dateCreation;
-    private long dateMiseAJour;
-    private int produitId;
-    private List<Integer> postulantId;
-    private Region region;
+    private String postMessage;
+    private Long PostDate;
+    private TypePost postType;
+    private String postedName;
+    private String postedContact;
+    private String postedEmail;
+    private String PostedPrenom;
+    private Region userAddress;
+    private Region postRegion;
 
     public int getId() {
         return id;
@@ -34,61 +23,75 @@ public class PostWS {
         this.id = id;
     }
 
-    public TypePost getTypePost() {
-        return typePost;
+    public String getPostMessage() {
+        return postMessage;
     }
 
-    public void setTypePost(TypePost typePost) {
-        this.typePost = typePost;
+    public void setPostMessage(String postMessage) {
+        this.postMessage = postMessage;
     }
 
-    public StatutPost getStatutPost() {
-        return statutPost;
+    public Long getPostDate() {
+        return PostDate;
     }
 
-    public void setStatutPost(StatutPost statutPost) {
-        this.statutPost = statutPost;
+    public void setPostDate(Long postDate) {
+        PostDate = postDate;
     }
 
-    public long getDateCreation() {
-        return dateCreation;
+    public TypePost getPostType() {
+        return postType;
     }
 
-    public void setDateCreation(long dateCreation) {
-        this.dateCreation = dateCreation;
+    public void setPostType(TypePost postType) {
+        this.postType = postType;
     }
 
-    public long getDateMiseAJour() {
-        return dateMiseAJour;
+    public String getPostedName() {
+        return postedName;
     }
 
-    public void setDateMiseAJour(long dateMiseAJour) {
-        this.dateMiseAJour = dateMiseAJour;
+    public void setPostedName(String postedName) {
+        this.postedName = postedName;
     }
 
-    public int getProduitId() {
-        return produitId;
+    public String getPostedContact() {
+        return postedContact;
     }
 
-    public void setProduitId(int produitId) {
-        this.produitId = produitId;
+    public void setPostedContact(String postedContact) {
+        this.postedContact = postedContact;
     }
 
-    public List<Integer> getPostulantId() {
-        return postulantId;
+    public String getPostedEmail() {
+        return postedEmail;
     }
 
-    public void setPostulantId(List<Integer> postulantId) {
-        this.postulantId = postulantId;
+    public void setPostedEmail(String postedEmail) {
+        this.postedEmail = postedEmail;
     }
 
-    public Region getRegion() {
-        return region;
+    public String getPostedPrenom() {
+        return PostedPrenom;
     }
 
-    public void setRegion(Region region) {
-        this.region = region;
+    public void setPostedPrenom(String postedPrenom) {
+        PostedPrenom = postedPrenom;
     }
-    
-    
+
+    public Region getUserAddress() {
+        return userAddress;
+    }
+
+    public void setUserAddress(Region userAddress) {
+        this.userAddress = userAddress;
+    }
+
+    public Region getPostRegion() {
+        return postRegion;
+    }
+
+    public void setPostRegion(Region postRegion) {
+        this.postRegion = postRegion;
+    }
 }
